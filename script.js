@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+});// update the copyright year.
+
 function convertTemperature() {
     const from = document.getElementById('From').value;
     const to = document.getElementById('To').value;
@@ -8,11 +12,11 @@ function convertTemperature() {
         return;
     }
 
-    let Tempo;// for temporary memory & temop for temperature value
+    let Tempo; // for temporary memory & temop for temperature value
 
     // Celsius to Fahrenheit
     if (from === 'C' && to === 'F') {
-        Tempo = (temp * 9/5) + 32;
+        Tempo = (temp * 9 / 5) + 32;
     }
     // Celsius to Kelvin
     else if (from === 'C' && to === 'K') {
@@ -20,11 +24,11 @@ function convertTemperature() {
     }
     // Fahrenheit to Celsius
     else if (from === 'F' && to === 'C') {
-        Tempo = (temp - 32) * 5/9;
+        Tempo = (temp - 32) * 5 / 9;
     }
     // Fahrenheit to Kelvin
     else if (from === 'F' && to === 'K') {
-        Tempo = (temp - 32) * 5/9 + 273.15;
+        Tempo = (temp - 32) * 5 / 9 + 273.15;
     }
     // Kelvin to Celsius
     else if (from === 'K' && to === 'C') {
@@ -32,9 +36,8 @@ function convertTemperature() {
     }
     // Kelvin to Fahrenheit
     else if (from === 'K' && to === 'F') {
-        Tempo = (temp - 273.15) * 9/5 + 32;
-    } 
-    else {
+        Tempo = (temp - 273.15) * 9 / 5 + 32;
+    } else {
         Tempo = temp; // when from and to units are the same
     }
 

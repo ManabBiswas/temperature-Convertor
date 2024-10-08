@@ -1,0 +1,132 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #c6f5f5;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: cursive;
+    color: white;
+    text-shadow: 1px 2px 4px black;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 25px 25px 0 0;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color: #008080;
+    text-align: center;
+}
+
+.containor {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select,
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #008080;
+    box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    width: 50%;
+    margin: auto;
+    background-color: #008080;
+    color: white;
+    font-size: 110%;
+    font-weight: bolder;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #006666;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: large;
+        padding: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

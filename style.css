@@ -1,4 +1,3 @@
-/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +11,6 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
 }
 
@@ -39,6 +36,7 @@ main {
     max-width: 500px;
     padding: 20px;
     margin: 20px auto;
+    flex: 1;
 }
 
 h1 {
@@ -79,35 +77,61 @@ select:focus {
 
 button {
     padding: 10px 20px;
-    width: 50%;
+    max-width: 60%;
     margin: auto;
-    background-color: #008080;
+    background-color: #089b9be2;
     color: white;
-    font-size: 110%;
-    font-weight: bolder;
+    letter-spacing: 5px;
+    font-style: oblique;
     border: none;
-    border-radius: 7px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #006666;
+    background-color: rgba(1, 203, 203, 0.877);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: gold;
 }
 
 footer {
-    margin-top: auto;
-    padding: 10px 0;
-    width: 100%;
-    background-color: #008080;
+    background-color: #000000;
     color: white;
+    padding: 20px 0;
     text-align: center;
+    width: 100%;
     border-radius: 0 0 25px 25px;
+    cursor: pointer;
 }
 
-/* Media Queries for Responsiveness */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    font-size: 105%;
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; font-size:  0.5s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #1c7af4;
+    font-size: large;
+}
+#footerimg {
+    float: left;
+}
+
 @media (max-width: 768px) {
     main {
         width: 95%;

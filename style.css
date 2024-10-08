@@ -77,7 +77,8 @@ select:focus {
 
 button {
     padding: 10px 20px;
-    max-width: 60%;
+     max-width: 75%;
+    min-width: 60%;
     margin: auto;
     background-color: #089b9be2;
     color: white;

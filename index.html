@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
+    
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,25 +18,36 @@
         <div class="containor">
             <h2>Temperature Converter</h2>
             <label for="From">From:</label>
-            <select name="" id="From">
+            <select id="From">
                 <option value="C">Celsius</option>
                 <option value="F">Fahrenheit</option>
                 <option value="K">Kelvin</option>
             </select>
             <label for="To">To:</label>
-            <select name="" id="To">
+            <select id="To">
                 <option value="C">Celsius</option>
                 <option value="F">Fahrenheit</option>
                 <option value="K">Kelvin</option>
             </select>
             <label for="temperature">Temperature</label>
-            <input type="number" name="" id="temperature" placeholder="Enter the value of temperature">
-            <button onclick="convertTemperature()">Convert</button>
+            <input type="number" id="temperature" placeholder="Enter the value of temperature">
+            <button onclick="convertTemperature()"><b id="convert">Convert</b></button>
             <label for="converted temperature">Converted Temperature</label>
             <input type="number" id="converted temperature" placeholder="Result">
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div><img id="footerimg" src="footerimage.png" alt="" width="10%"></div>
+            <p>&copy; <span id="current-year"></span> Manab Biswas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="https://www.linkedin.com/in/manab-biswas-354207291" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ManabBiswas" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
